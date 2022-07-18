@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.book_list {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .book_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
